@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E1D791F-1378-411C-A97C-86CC76C4A646}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication</RootNamespace>
+    <AssemblyName>WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Documents and Settings\Akachan\Desktop\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxAsyncronous.aspx" />
+    <Content Include="AngularJS\CallWebMethod.aspx" />
+    <Content Include="BootstrapPopOverManual.aspx" />
+    <Content Include="BootstrapTable.aspx" />
+    <Content Include="CkEditor.aspx" />
+    <Content Include="BootstrapPopOver.aspx" />
+    <Content Include="FullScreen.aspx" />
+    <Content Include="js\basic.js" />
+    <Content Include="js\bootstrap\css\bootstrap-table.css" />
+    <Content Include="js\bootstrap\js\bootstrap-table.js" />
+    <Content Include="js\ckeditor\ckeditor.js" />
+    <Content Include="js\dotdotdot\jquery.dotdotdot.js" />
+    <Content Include="js\dotdotdot\jquery.dotdotdot.min.js" />
+    <Content Include="js\fullscreen.js" />
+    <Content Include="js\jspdf.debug.js" />
+    <Content Include="js\jspdf.min.js" />
+    <Content Include="SelectXMLExportPDF.aspx" />
+    <Content Include="SelectXMLExportPNG.aspx" />
+    <Content Include="css\ajax-loader.css" />
+    <Content Include="css\IconCircle.css" />
+    <Content Include="css\Shadow.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DatePicker.aspx" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="js\bootstrap\css\bootstrap.css" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css" />
+    <Content Include="js\bootstrap\js\bootstrap.js" />
+    <Content Include="js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\Export\html2canvas.js" />
+    <Content Include="js\Export\jquery.base64.js" />
+    <Content Include="js\Export\tableExport.js" />
+    <Content Include="SelectXMLExportExcel.aspx" />
+    <Content Include="File\DataX.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="HttpPostByAjax.aspx" />
+    <Content Include="IconShadow.aspx" />
+    <Content Include="JavaScriptPopupPage_Jquery.aspx" />
+    <Content Include="JQueryAjaxFileUpload.aspx" />
+    <Content Include="js\Export\jspdf\jspdf.js" />
+    <Content Include="js\Export\jspdf\libs\base64.js" />
+    <Content Include="js\Export\jspdf\libs\sprintf.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\datepicker\jquery.datetimepicker.css" />
+    <Content Include="js\datepicker\jquery.datetimepicker.js" />
+    <Content Include="js\pace.min.js" />
+    <Content Include="AjaxPreloader.aspx" />
+    <Content Include="HttpResponsePost.aspx" />
+    <Content Include="PopupPageAndCallBack.aspx" />
+    <Content Include="ReturnPopupPage.aspx" />
+    <Content Include="TestDebuggerIE.aspx" />
+    <Content Include="TextUnderlineDot.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="HttpPostByForm.aspx" />
+    <Content Include="ตัดคำ.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxPreloader.aspx.cs">
+      <DependentUpon>AjaxPreloader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxPreloader.aspx.designer.cs">
+      <DependentUpon>AjaxPreloader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxAsyncronous.aspx.cs">
+      <DependentUpon>AjaxAsyncronous.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxAsyncronous.aspx.designer.cs">
+      <DependentUpon>AjaxAsyncronous.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AngularJS\CallWebMethod.aspx.cs">
+      <DependentUpon>CallWebMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AngularJS\CallWebMethod.aspx.designer.cs">
+      <DependentUpon>CallWebMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapPopOverManual.aspx.cs">
+      <DependentUpon>BootstrapPopOverManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapPopOverManual.aspx.designer.cs">
+      <DependentUpon>BootstrapPopOverManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapTable.aspx.cs">
+      <DependentUpon>BootstrapTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapTable.aspx.designer.cs">
+      <DependentUpon>BootstrapTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CkEditor.aspx.cs">
+      <DependentUpon>CkEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CkEditor.aspx.designer.cs">
+      <DependentUpon>CkEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BootstrapPopOver.aspx.cs">
+      <DependentUpon>BootstrapPopOver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapPopOver.aspx.designer.cs">
+      <DependentUpon>BootstrapPopOver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FullScreen.aspx.cs">
+      <DependentUpon>FullScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FullScreen.aspx.designer.cs">
+      <DependentUpon>FullScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectXMLExportPDF.aspx.cs">
+      <DependentUpon>SelectXMLExportPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectXMLExportPDF.aspx.designer.cs">
+      <DependentUpon>SelectXMLExportPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectXMLExportPNG.aspx.cs">
+      <DependentUpon>SelectXMLExportPNG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectXMLExportPNG.aspx.designer.cs">
+      <DependentUpon>SelectXMLExportPNG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatePicker.aspx.cs">
+      <DependentUpon>DatePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatePicker.aspx.designer.cs">
+      <DependentUpon>DatePicker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectXMLExportExcel.aspx.cs">
+      <DependentUpon>SelectXMLExportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectXMLExportExcel.aspx.designer.cs">
+      <DependentUpon>SelectXMLExportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HttpPostByAjax.aspx.cs">
+      <DependentUpon>HttpPostByAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HttpPostByAjax.aspx.designer.cs">
+      <DependentUpon>HttpPostByAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelUpload.cs" />
+    <Compile Include="IconShadow.aspx.cs">
+      <DependentUpon>IconShadow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IconShadow.aspx.designer.cs">
+      <DependentUpon>IconShadow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptPopupPage_Jquery.aspx.cs">
+      <DependentUpon>JavaScriptPopupPage_Jquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JavaScriptPopupPage_Jquery.aspx.designer.cs">
+      <DependentUpon>JavaScriptPopupPage_Jquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQueryAjaxFileUpload.aspx.cs">
+      <DependentUpon>JQueryAjaxFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQueryAjaxFileUpload.aspx.designer.cs">
+      <DependentUpon>JQueryAjaxFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ConvertersUtility.cs" />
+    <Compile Include="PopupPageAndCallBack.aspx.cs">
+      <DependentUpon>PopupPageAndCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopupPageAndCallBack.aspx.designer.cs">
+      <DependentUpon>PopupPageAndCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HttpResponsePost.aspx.cs">
+      <DependentUpon>HttpResponsePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HttpResponsePost.aspx.designer.cs">
+      <DependentUpon>HttpResponsePost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnPopupPage.aspx.cs">
+      <DependentUpon>ReturnPopupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnPopupPage.aspx.designer.cs">
+      <DependentUpon>ReturnPopupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HttpPostByForm.aspx.cs">
+      <DependentUpon>HttpPostByForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HttpPostByForm.aspx.designer.cs">
+      <DependentUpon>HttpPostByForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDebuggerIE.aspx.cs">
+      <DependentUpon>TestDebuggerIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDebuggerIE.aspx.designer.cs">
+      <DependentUpon>TestDebuggerIE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TextUnderlineDot.aspx.cs">
+      <DependentUpon>TextUnderlineDot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextUnderlineDot.aspx.designer.cs">
+      <DependentUpon>TextUnderlineDot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ตัดคำ.aspx.cs">
+      <DependentUpon>ตัดคำ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ตัดคำ.aspx.designer.cs">
+      <DependentUpon>ตัดคำ.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{E0012444-5702-4C69-8E59-DD9B4159BB32}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\data1.json" />
+    <None Include="js\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="js\bootstrap\css\bootstrap.css.map" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1176</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

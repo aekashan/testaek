@@ -1,0 +1,746 @@
+﻿/* main */
+
+
+html, body
+{
+    height: 100%;
+    word-wrap: break-word;
+    font-family: 'Tahoma','Open Sans' , Verdana, Geneva, sans-serif !important;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+    background-color: rgb(255, 255, 255);
+}
+footer
+{
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.04);
+    color: rgb(46, 134, 194);
+}
+select option
+{
+    padding: 4px 15px 4px 15px;
+}
+a
+{
+    text-decoration: none;
+    color: #D7DCDE;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #D7DCDE;
+}
+
+.borderUpdate
+{
+border:2;
+border-color:Green;
+}
+
+
+/* style */
+
+.content
+{
+    padding-top: 70px;
+    background-color: rgb(243, 245, 249);
+}
+.login-box
+{
+    width: 340px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -120px;
+}
+.pic
+{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+}
+h5.underline
+{
+    font-size: 15px;
+    margin: 0px 0px 15px;
+    padding: 0px;
+    line-height: 24px;
+    color: rgb(46, 134, 194);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+.progress-list
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.progress-list .details .title
+{
+    font-weight: 300;
+    line-height: 18px;
+}
+.progress-list .details .description
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: 0.4;
+    line-height: 12px;
+}
+.progress .progress-bar.progress-bar-red
+{
+    background-color: rgb(255, 74, 67);
+}
+.progress .progress-bar.progress-bar-orange
+{
+    background-color: rgb(255, 193, 0);
+}
+.progress .progress-bar.progress-bar-green
+{
+    background-color: rgb(162, 210, 0);
+}
+.progress .progress-bar.progress-bar-cyan
+{
+    background-color: rgb(34, 190, 239);
+}
+.pointer
+{
+    cursor: pointer;
+    font-weight: 700;
+}
+.pointer:hover
+{
+    color: rgb(46, 134, 194);
+}
+.scroll-top-wrapper
+{
+    cursor: pointer;
+    position: fixed;
+    z-index: 99999999;
+    width: 30px;
+    height: 30px;
+    right: 4px;
+    bottom: 4px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background: none repeat scroll 0% 0% rgba(89, 95, 102, 0.7);
+}
+.scroll-top-wrapper:hover
+{
+    background: none repeat scroll 0% 0% rgb(46, 134, 194);
+    box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+}
+.circle
+{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(139, 145, 160);
+    background-color: rgb(242, 244, 246);
+}
+.line
+{
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+.control
+{
+    padding: 0px 10px 0px 0px;
+}
+/* overriding core css in bootstrap */
+
+.container
+{
+    width: 100% !important;
+}
+h1, .h2, h3, .h4, h5
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    border: none;
+}
+table
+{
+    border-collapse: inherit;
+}
+.form-control
+{
+    font-family: 'Open Sans' , Verdana, Geneva, sans-serif !important;
+    font-size: 13px;
+    font-weight: 400;
+}
+.modal-backdrop
+{
+    /*background-color: rgb(255, 255, 255);*/
+}
+.navbar
+{
+    color: #D7DCDE;
+    /*color: rgb(255, 255, 255);*/
+    border-bottom: 5px solid rgb(17, 98, 153);
+    /*background-color: rgb(250, 250, 250);
+    background-color:#E8E8E8;*/
+    background-color:#344A61;
+    box-shadow: 0px 2px 3px rgb(227, 231, 233);
+        
+}
+.navbar-brand
+{
+    margin-top: -5px;
+}
+.navbar-default .navbar-nav > li > a
+{
+    color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover
+{
+    background-color: rgb(13, 94, 146);
+    color: rgb(255, 255, 255);
+}
+.navbar-brand > .tagline
+{
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 5px;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.panel
+{
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-default > .panel-heading
+{
+    border: none;
+    color: rgb(102, 102, 102);
+}
+.panel-body
+{
+}
+.modal-footer
+{
+    margin-top: 0px;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th
+{
+    background-color: rgb(252, 248, 227);
+}
+.table thead > tr > td
+{
+    vertical-align: middle;
+}
+.table-bordered
+{
+    border-collapse: collapse;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+{
+    line-height: 13px;
+    font-size: 11px;
+    padding: 4px;
+    vertical-align: middle;
+}
+/* color */
+
+.bg-turquoise
+{
+    background-color: rgb(26, 188, 156) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-green-sea
+{
+    background-color: rgb(26, 188, 156) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-emerland
+{
+    background-color: rgb(46, 204, 113) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-nephritis
+{
+    background-color: rgb(39, 174, 96) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-peter-river
+{
+    background-color: rgb(18, 109, 167) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-blue
+{
+    background-color: rgb(66, 139, 202) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-belize-hole
+{
+    background-color: rgb(41, 128, 185) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-amethyst
+{
+    background-color: rgb(155, 89, 182) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-wisteria
+{
+    background-color: rgb(142, 68, 173) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-pink
+{
+    background-color: rgb(223, 71, 130) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-red
+{
+    background-color: rgb(254, 121, 122) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-wet-asphalt
+{
+    background-color: rgb(52, 73, 94) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-midnight-blue
+{
+    background-color: rgb(44, 62, 80) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-night-shade
+{
+    background-color: rgb(44, 62, 80) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-sun-flower
+{
+    background-color: rgb(241, 196, 15) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-orange
+{
+    background-color: rgb(243, 156, 18) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-carrot
+{
+    background-color: rgb(230, 126, 34) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-pumpkin
+{
+    background-color: rgb(211, 84, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-alizarin
+{
+    background-color: rgb(231, 76, 60) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-pomegranate
+{
+    background-color: rgb(192, 57, 43) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-white
+{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(189, 195, 199) !important;
+}
+.bg-clouds
+{
+    background-color: rgb(236, 240, 241) !important;
+    color: rgb(137, 137, 137) !important;
+}
+.bg-silver
+{
+    background-color: rgb(189, 195, 199) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-concrete
+{
+    background-color: rgb(140, 162, 183) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-asbestos
+{
+    background-color: rgb(127, 140, 141) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-sea_sea
+{    
+    background-color: rgb(52, 152, 219) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.bg-green_black
+{
+    background-color:#344A61;
+    color: rgb(255, 255, 255) !important;    
+}
+.text-turquoise
+{
+    color: rgb(26, 188, 156) !important;
+}
+.text-green-sea
+{
+    color: rgb(26, 188, 156) !important;
+}
+.text-emerland
+{
+    color: rgb(46, 204, 113) !important;
+}
+.text-nephritis
+{
+    color: rgb(39, 174, 96) !important;
+}
+.text-peter-river
+{
+    color: rgb(18, 109, 167) !important;
+}
+.text-blue
+{
+    color: rgb(66, 139, 202) !important;
+}
+.text-belize-hole
+{
+    color: rgb(41, 128, 185) !important;
+}
+.text-amethyst
+{
+    color: rgb(155, 89, 182) !important;
+}
+.text-wisteria
+{
+    color: rgb(142, 68, 173) !important;
+}
+.text-pink
+{
+    color: rgb(223, 71, 130) !important;
+}
+.text-red
+{
+    color: rgb(254, 121, 122) !important;
+}
+.text-wet-asphalt
+{
+    color: rgb(52, 73, 94) !important;
+}
+.text-midnight-blue
+{
+    color: rgb(44, 62, 80) !important;
+}
+.text-night-shade
+{
+    color: rgb(44, 62, 80) !important;
+}
+.text-sun-flower
+{
+    color: rgb(241, 196, 15) !important;
+}
+.text-orange
+{
+    color: rgb(243, 156, 18) !important;
+}
+.text-carrot
+{
+    color: rgb(230, 126, 34) !important;
+}
+.text-pumpkin
+{
+    color: rgb(211, 84, 0) !important;
+}
+.text-alizarin
+{
+    color: rgb(231, 76, 60) !important;
+}
+.text-pomegranate
+{
+    color: rgb(192, 57, 43) !important;
+}
+.text-white
+{
+    color: rgb(255, 255, 255) !important;
+}
+.text-black
+{
+    color: rgb(0, 0, 0) !important;
+}
+.text-clouds
+{
+    color: rgb(236, 240, 241) !important;
+}
+.text-silver
+{
+    color: rgb(189, 195, 199) !important;
+}
+.text-concrete
+{
+    color: rgb(140, 162, 183) !important;
+}
+.text-asbestos
+{
+    color: rgb(127, 140, 141) !important;
+}
+
+.timeline-box
+{
+    position: relative;
+}
+.timeline-box:before
+{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    margin-left: -1px;
+    background-color: #E9ECF1;
+}
+.timeline-box .tl-row
+{
+    position: relative;
+}
+.timeline-box .tl-row > .popover
+{
+    width: 47%;
+    float: left;
+    margin: 0;
+}
+.timeline-box .tl-row.float-right
+{
+    float: none !important;
+}
+.timeline-box .tl-row.float-right .popover
+{
+    float: right;
+}
+.timeline-box .tl-row.float-right .tl-panel
+{
+    text-align: right;
+    float: left;
+}
+.timeline-box .tl-bullet
+{
+    position: absolute;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    display: block;
+    top: 16px;
+    margin-left: -8px;
+    border-radius: 100px;
+}
+.timeline-box .tl-bullet:before
+{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: none repeat scroll 0% 0% #FFF;
+    display: block;
+    margin: 3px 0px 0px 3px;
+    border-radius: 100px;
+}
+.tl-row:before, .tl-row:after
+{
+    content: "";
+    display: table;
+}
+.tl-row:after
+{
+    clear: both;
+}
+.timeline-box .tl-row > .popover
+{
+    width: 47%;
+    float: left;
+    margin: 0px;
+}
+.timeline-box .tl-panel
+{
+    float: right;
+    width: 47%;
+    padding: 13px 0;
+    text-align: left;
+    -moz-opacity: .5;
+    filter: alpha(opacity:50);
+    opacity: .5;
+}
+.chat-box .popover
+{
+    display: block;
+    float: none;
+    position: relative !important;
+    min-height: 45px;
+    margin-left: 0px !important;
+    box-shadow: 0px 0px 0px transparent !important;
+}
+.chat-time
+{
+    color: rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+    font-size: 11px;
+}
+.chat-box .popover h3
+{
+    margin: 0px 0px 5px;
+    font-size: 14px;
+}
+.chat-box .popover.left .arrow, .chat-box .popover.right .arrow
+{
+    top: 23px;
+}
+.popover
+{
+    top: 0px;
+    left: 0px;
+    z-index: 1049;
+    display: none;
+    margin: 0px;
+    min-width: 48%;
+    padding: 0px !important;
+}
+.popover, .ui-menu, .minicolors-panel, .chosen-drop
+{
+    background: none repeat scroll 0% 0% #FFF;
+    border-color: #E9ECF1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+}
+.popover.left .arrow
+{
+    top: 50%;
+    right: -11px;
+    margin-top: -11px;
+}
+.popover .arrow
+{
+    border-width: 11px;
+}
+.popover .arrow, .popover .arrow:after
+{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+}
+.navbar-fixed-top
+{
+    padding-top: 5px;
+    top: 0px;
+}
+nav b
+{
+    color: #02BD9C;
+}
+b
+{
+    color: rgb(17, 98, 153);
+}
+p
+{
+    margin: 0px 0px 0px;
+}
+a
+{
+    color: rgb(243, 156, 18);
+}
+a:hover
+{
+    color: rgb(153, 153, 153);
+}
+select
+{
+    padding: 2px 4px;
+    margin: 0;
+    height: 24px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px rgb(127, 157, 185) inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: rgb(245, 245, 245);
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+/*input
+{
+    padding: 2px 4px;
+    margin: 0;
+    height: 24px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px rgb(127, 157, 185) inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: rgb(245, 245, 245);
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}*/
+
+.btn-info {
+    background-color: rgb(155, 89, 182);
+    border-color: rgb(142, 68, 173);
+    color: #fff;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    background-color: rgb(142, 68, 173);
+    border-color: rgb(142, 68, 173);
+    color: #fff;
+}
+.popover
+{
+    min-width: 400px ! important;
+}
+
+div.icheckbox_flat-blue
+{
+	margin-top: -5px;
+}
+
+body.pace-done
+{
+	color: Black;
+}
+
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 0px;
+    border-bottom: 1px solid #ddd;
+}

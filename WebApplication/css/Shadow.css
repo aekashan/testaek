@@ -1,0 +1,93 @@
+﻿
+
+@keyframes hover {
+50% {
+    transform: translateY(-3px);
+}
+100% {
+    transform: translateY(-6px);
+}
+}
+@keyframes hover-shadow {
+0% {
+    opacity: 0.4;
+    transform: translateY(6px);
+}
+50% {
+    opacity: 1;
+    transform: translateY(3px);
+}
+100% {
+    opacity: 0.4;
+    transform: translateY(6px);
+}
+}
+.hover-shadow {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    position: relative;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hover-shadow {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    position: relative;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.hover-shadow:before {
+    background: radial-gradient(ellipse at center center , rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    height: 10px;
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    width: 90%;
+    z-index: -1;
+}
+.hover-shadow:hover, .hover-shadow:focus, .hover-shadow:active {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: hover;
+    animation-timing-function: linear;
+    transform: translateY(-6px);
+}
+.hover-shadow:hover:before, .hover-shadow:focus:before, .hover-shadow:active:before {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: hover-shadow;
+    animation-timing-function: linear;
+    opacity: 0.4;
+    transform: translateY(6px);
+}
+.shadow-radial {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    position: relative;
+    transform: translateZ(0px);
+}
+.shadow-radial:before, .shadow-radial:after {
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    content: "";
+    height: 5px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    width: 100%;
+}

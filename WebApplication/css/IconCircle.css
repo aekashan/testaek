@@ -1,0 +1,48 @@
+﻿
+.service-wrap {
+    margin: 0 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.service-wrap h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+.service-wrap p {
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    margin: -95px 0 0;
+    min-height: 120px;
+    padding: 95px 20px 20px;
+}
+.service-icon {
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    border: 5px solid rgb(240, 242, 245);
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.service-icon .count {
+    background-color: rgb(80, 176, 221);
+    border: 3px solid rgb(143, 205, 233);
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    margin: -28px 0 0 20px;
+    padding: 3px 0 0;
+    position: absolute;
+    width: 30px;
+}
+.service-icon span {
+    display: table-cell;
+    font-size: 50px;
+    height: 90px;
+    position: relative;
+    vertical-align: middle;
+    width: 90px;
+}
